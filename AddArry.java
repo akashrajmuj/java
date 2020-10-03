@@ -1,6 +1,6 @@
 import java.util.Scanner;
 // add all element of array
-class AddArry
+class AddArry                               //Top-Down sequential Approach
 {
     public static void main(String ... k) {
     int i=0,sum=0;
@@ -26,5 +26,32 @@ class AddArry
         sum=sum+arr[i];
     }
     System.out.println("sum of all element is "+sum);
+    }
+}
+
+
+import java.util.*;                     //Object Oriented Approach
+class AddArry                               //Top-Down sequential Approach
+{
+    public static void main(String ... k) {
+    int i=0,sum=0;
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter number of element");
+    int num = sc.nextInt();
+    int arr[]=new int[num];
+     for(int i=0;i<num;i++)
+         arr[i]=sc.nextInt();
+    
+     AddArry obj=new AddArry();   
+    System.out.println("Sum =" + obj.add(arr));
+    }
+    int SUM=0;
+    public int add(int array[])
+    {
+        int i;
+        for(int i:array)
+            SUM=SUM+i;
+        return SUM;
     }
 }
