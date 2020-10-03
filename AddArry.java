@@ -31,7 +31,7 @@ class AddArry                               //Top-Down sequential Approach
 
 
 import java.util.*;                     //Object Oriented Approach
-class AddArry                               //Top-Down sequential Approach
+class AddArry                               
 {
     public static void main(String ... k) {
     int i=0,sum=0;
